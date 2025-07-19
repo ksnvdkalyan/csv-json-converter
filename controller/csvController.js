@@ -1,6 +1,6 @@
 const fs = require('fs');
 const csv = require('csv-parser');
-const pool = require('../config/db');
+const pool = require('../config/databaseConnector');
 const buildNestedObject = require('../utils/parser');
 require('dotenv').config();
 
