@@ -1,0 +1,11 @@
+name.firstName,name.lastName,age,address.line1,address.line2,address.city,address.state,gender,contact.email,contact.phone,hobbies.sports,hobbies.music
+Rohit,Prasad,35,A-563 Rakshak Society,New Pune Road,Pune,Maharashtra,male,rohit@example.com,1234567890,cricket,rock
+Anita,Sharma,18,Plot 42,Garden Street,Delhi,Delhi,female,anita@example.com,9876543210,tennis,jazz
+Rahul,Mehta,45,Flat 2B,Baner Road,Pune,Maharashtra,male,rahul@example.com,2345678901,football,classic
+Sneha,Iyer,28,103 Green View,MG Road,Bangalore,Karnataka,female,sneha@example.com,3456789012,badminton,hiphop
+Amit,Kumar,63,12 Oak Street,Lake View,Chennai,Tamil Nadu,male,amit@example.com,4567890123,chess,folk
+Pooja,Nair,52,22-11B,Beach Road,Kochi,Kerala,female,pooja@example.com,5678901234,tennis,country
+Karan,Verma,39,Block C,Industrial Area,Noida,Uttar Pradesh,male,karan@example.com,6789012345,cricket,edm
+Divya,Reddy,21,67 Rose Ave,Hill Town,Hyderabad,Telangana,female,divya@example.com,7890123456,basketball,pop
+Manoj,Das,15,88 Palm Street,Rainbow City,Kolkata,West Bengal,male,manoj@example.com,8901234567,volleyball,rock
+Neha,Joshi,70,109 Harmony Apt,City Center,Nagpur,Maharashtra,female,neha@example.com,9012345678,golf,classical
