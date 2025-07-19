@@ -5,17 +5,17 @@ This is a Node.js (Express) backend project, It parses a CSV file with nested do
 ⸻
 
 🧰 Features
-	•	✅ Convert CSV rows into nested JSON
-	•	✅ Handle dot-separated complex properties (a.b.c)
-	•	✅ Store structured data into PostgreSQL (JSONB fields)
-	•	✅ Categorize and display age group distribution
-	•	✅ Lightweight health check endpoint
-	•	✅ Configurable via .env
+- ✅ Convert CSV rows into nested JSON
+- ✅ Handle dot-separated complex properties (a.b.c)
+- ✅ Store structured data into PostgreSQL (JSONB fields)
+- ✅ Categorize and display age group distribution
+- ✅ Lightweight health check endpoint
+- ✅ Configurable via .env
 
 ⸻
 
 📁 Project Structure
-
+```
 csv-json-converter/
 │
 ├── config/
@@ -34,36 +34,36 @@ csv-json-converter/
 ├── index.js                # Express entry point
 ├── schema.sql              # PostgreSQL schema for `users` table
 └── README.md
-
+```
 
 ⸻
 
 🚀 Getting Started
 
 1. Clone the Repository
-
-git clone https://github.com/your-username/csv-json-converter.git
-cd csv-json-converter
-
+```
+git clone {{path}}/csv-json-converter.git
+cd cs```v-json-converter
+```
 2. Install Dependencies
-
+```
 npm install
-
+```
 3. Setup .env
-
 Create a .env file in the root:
-
+```
 CSV_FILE_PATH=./data/users.csv
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_NAME=kelpdb
+```
 
 4. Create PostgreSQL Table
 
 Ensure your database is running, then execute the SQL in schema.sql:
-
+```
 CREATE TABLE public.users (
   id SERIAL PRIMARY KEY,
   name VARCHAR NOT NULL,
@@ -71,34 +71,33 @@ CREATE TABLE public.users (
   address JSONB,
   additional_info JSONB
 );
+```
 
 5. Run the Server
-
+```
 node index.js
-
+```
 
 ⸻
 
-📡 API Endpoints
+## API Endpoints
 
 GET /health
 Returns a simple health status.
 
-⸻
-
 GET /process-csv
-	•	Parses the CSV file defined in CSV_FILE_PATH
-	•	Converts each row into structured JSON
-	•	Inserts valid data into PostgreSQL
-	•	Logs age group distribution
-	•	Returns the parsed JSON in response
-    •	📊 Age Group Distribution (Console Output)
+- Parses the CSV file defined in CSV_FILE_PATH
+- Converts each row into structured JSON
+- Inserts valid data into PostgreSQL
+- Logs age group distribution
+- Returns the parsed JSON in response
+- 📊 Age Group Distribution (Console Output)
 
 
 ⸻
 
-✅ Assumptions
-	•	First line of CSV is always the header
-	•	Mandatory fields: name.firstName, name.lastName, age
-	•	Properties with dot notation can have infinite nesting
-	•	All unmapped fields are stored in additionalInfo JSONB column
+## Assumptions
+- First line of CSV is always the header
+- Mandatory fields: name.firstName, name.lastName, age
+- Properties with dot notation can have infinite nesting
+- All unmapped fields are stored in additionalInfo JSONB column
