@@ -43,7 +43,7 @@ csv-json-converter/
 1. Clone the Repository
 ```
 git clone {{path}}/csv-json-converter.git
-cd cs```v-json-converter
+cd csv-json-converter
 ```
 2. Install Dependencies
 ```
